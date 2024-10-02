@@ -14,16 +14,15 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faTrello } from '@fortawesome/free-brands-svg-icons';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
-import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-boards',
   standalone: true,
   imports: [
-    CommonModule,
     NavbarComponent,
     FontAwesomeModule,
-    CdkAccordionModule,
-  ],
+    CdkAccordionModule
+],
   templateUrl: './boards.component.html',
 })
 export class BoardsComponent {

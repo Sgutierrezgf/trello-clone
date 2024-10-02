@@ -6,7 +6,7 @@ import {
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { CommonModule } from '@angular/common';
+
 import { ToDo, Column } from '../../models/todo.model';
 import { DialogModule, Dialog } from '@angular/cdk/dialog';
 import { TodoDialogComponent } from '../../components/todo-dialog/todo-dialog.component';
@@ -14,7 +14,7 @@ import { TodoDialogComponent } from '../../components/todo-dialog/todo-dialog.co
 @Component({
   selector: 'app-board',
   standalone: true,
-  imports: [CommonModule, DragDropModule, NavbarComponent, DialogModule],
+  imports: [DragDropModule, NavbarComponent, DialogModule],
   templateUrl: './board.component.html',
   styles: [
     `
